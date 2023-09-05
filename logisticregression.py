@@ -21,10 +21,13 @@ xtest=sc.fit_transform(xtest)
 print(xtrain[0:10,:])
 from sklearn.linear_model import LogisticRegression
   
-c`` = LogisticRegression(random_state = 0)
+c = LogisticRegression(random_state = 0)
 c.fit(xtest,ytrain)
 pred = c.predict(xtest)
 from sklearn.metrics import confusion_matrix
   
 confusem = confusion_matrix(ytest, pred)
 print ("Confusion Matrix : \n", confusem)
+from sklearn.metrics import accuracy_score
+  
+print ("Accuracy : ", accuracy_score(ytest, y_pred))

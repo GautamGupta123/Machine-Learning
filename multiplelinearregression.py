@@ -1,4 +1,3 @@
-
 import pandas as pd
 import numpy as np
 house=pd.read_csv("USA_Housing.csv")
