@@ -1,6 +1,6 @@
 import pandas as pd
 import numpy as np
-house=pd.read_csv("USA_Housing.csv")
+house=pd.read_csv("csv/USA_Housing.csv")
 print(house)
 house['Address']=house['Address'].astype('category')
 house['Address']=house['Address'].cat.codes
