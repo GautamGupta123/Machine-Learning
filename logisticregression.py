@@ -1,7 +1,7 @@
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
-house=pd.read_csv("USA_housing.csv")
+house=pd.read_csv("csv/USA_housing.csv")
 house.head(5)
 house.drop(['Address'],axis=1)
 house.shape
@@ -30,4 +30,4 @@ confusem = confusion_matrix(ytest, pred)
 print ("Confusion Matrix : \n", confusem)
 from sklearn.metrics import accuracy_score
   
-print ("Accuracy : ", accuracy_score(ytest, y_pred))
+print ("Accuracy : ", accuracy_score(ytest, pred))
