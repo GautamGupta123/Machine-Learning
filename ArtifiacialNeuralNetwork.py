@@ -1,6 +1,6 @@
 import pandas as pd
 import numpy as np
-#Loading Dataset
+
 data = pd.read_csv("csv/Churn_Modelling.csv")
 X = data.iloc[:,3:-1].values
 print(X)
